@@ -1,0 +1,25 @@
+Package: ranchr
+Title: Tools and Data Helpful for Breeding in the Game 'Monster Rancher 2'
+Version: 0.0.0.9000
+Authors@R: 
+    c(
+        person(
+            given = "JBrandon",
+            family = "Duck-Mayr",
+            email = "j.duckmayr@gmail.com",
+            role = c("aut", "cre")
+        ),
+        person(
+            given = "Kurasu",
+            family = "Soratobu",
+            role = "ctb"
+        )
+    )
+Description: Provides data and tools to help you breed monsters in the cult
+    classic game 'Monster Rancher 2'. The data used in this package is from
+    the 'Combining FAQ' written by Kurasu Soratobu, who has agreed to its use
+    in this R package.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2
