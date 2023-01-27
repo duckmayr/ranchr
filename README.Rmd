@@ -28,3 +28,8 @@ You can install the development version of ranchr like so:
 # install.packages("devtools")
 devtools::install_github("duckmayr/ranchr")
 ```
+
+## Special Thanks
+
+Special thanks to Kurasu Soratobu, whose "Monster Rancher: Combining FAQ" provided the necessary data and information to make this package possible; I appreciate his willingness to let me publish his data.
+Please see the file `inst/COPYRIGHTS` for relevant copyright information.
