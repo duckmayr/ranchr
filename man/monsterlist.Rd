@@ -19,6 +19,7 @@ A data frame with 337 rows and 3 columns:
 monsterlist
 }
 \description{
-A list of the Monster Rancher 2 monsters the \code{ranchr} package has data on
+A data frame identifying all the Monster Rancher 2 monsters the \code{ranchr}
+package has data on
 }
 \keyword{datasets}
