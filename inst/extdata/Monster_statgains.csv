@@ -1,0 +1,363 @@
+monster,main,sub,life,power,intelligence,skill,speed,defense,total,lifespan
+Ape,Ape,Ape,4,4,1,3,3,4,19,500
+Bossy,Ape,Gali,4,4,3,3,3,4,21,440
+Rock Ape,Ape,Golem,4,4,2,2,2,4,18,480
+Gibberer,Ape,Hare,4,4,1,3,4,3,19,460
+Tropical Ape,Ape,Plant,4,3,2,3,3,3,18,520
+Arrow Head,Arrow Head,Arrow Head,3,3,2,3,2,5,18,500
+Plated Arrow,Arrow Head,Durahan,3,3,2,3,2,5,18,500
+Priarocks,Arrow Head,Golem,3,4,2,2,2,5,18,480
+Renocraft,Arrow Head,Henger,3,3,2,3,3,4,18,460
+Selketo,Arrow Head,Joker,3,3,3,4,2,4,19,440
+Log Sawer,Arrow Head,Mock,2,3,3,3,2,4,17,520
+MustardArrow,Arrow Head,Suezo,3,3,3,3,2,4,18,480
+Bajarl,Bajarl,Bajarl,3,4,2,4,3,2,18,450
+Jaba,Bajarl,Joker,3,4,3,4,3,2,19,410
+Ultrarl,Bajarl,??? (Ultrarl),3,4,2,4,3,2,18,470
+Baku,Baku,Baku,5,4,1,2,1,3,16,500
+Magmax,Baku,Dragon,4,4,3,2,1,3,17,440
+War Baku,Baku,Durahan,4,4,2,2,1,4,17,500
+Higante,Baku,Golem,4,4,2,2,1,4,17,480
+Gontar,Baku,Hare,4,4,1,2,3,2,16,460
+Giga Pint,Baku,Jell,4,3,2,3,1,3,16,480
+Baku Clown,Baku,Joker,4,4,3,3,1,3,18,440
+Nussie,Baku,Kato,4,3,3,2,3,3,18,520
+Icebergy,Baku,Tiger,4,3,2,3,2,2,16,460
+KautRoarKaut,Beaclon,Bajarl,4,4,1,3,2,3,17,420
+Beaclon,Beaclon,Beaclon,4,4,1,2,2,4,17,400
+Bethelgeus,Beaclon,Dragon,4,4,3,2,2,4,19,380
+Ducklon,Beaclon,Ducken,4,4,2,3,3,3,19,400
+Centurion,Beaclon,Durahan,4,4,2,2,2,4,18,440
+Rocklon,Beaclon,Golem,4,4,2,2,2,4,18,420
+Melcarba,Beaclon,Henger,3,4,2,3,3,3,18,400
+Jaggernaut,Beaclon,Joker,4,4,3,3,2,3,19,380
+Sloth Beetle,Beaclon,Tiger,3,3,2,3,3,3,17,400
+Eggplantern,Beaclon,??? (Eggplantern),3,4,2,3,3,3,18,420
+Antares,Centaur,Arrow Head,3,3,3,4,2,3,18,440
+Bazoo,Centaur,Bajarl,3,3,3,5,2,2,18,420
+Centaur,Centaur,Centaur,3,3,4,5,2,2,19,400
+Dragoon,Centaur,Dragon,3,4,4,4,2,2,19,380
+Chariot,Centaur,Durahan,3,3,4,4,2,3,19,440
+Trojan,Centaur,Golem,3,4,4,3,2,3,19,420
+Reaper,Centaur,Joker,3,3,4,5,2,2,19,380
+Ferious,Centaur,Pixie,2,3,4,5,3,2,19,400
+Celious,Centaur,Tiger,3,3,4,5,3,2,20,400
+Trotter,Centaur,??? (Trotter),3,3,4,5,3,2,20,320
+ColorPandora,ColorPandora,ColorPandora,5,2,2,3,3,1,18,500
+Liquid Cube,ColorPandora,Jell,4,2,3,3,3,2,18,480
+PeachTreeBug,ColorPandora,Pixie,3,2,3,3,4,1,17,460
+Crab Dragon,Dragon,Arrow Head,3,4,4,3,2,4,20,410
+Dodongo,Dragon,Bajarl,3,5,4,3,2,3,20,390
+Corkasus,Dragon,Beaclon,3,5,3,3,2,3,19,370
+Dragon,Dragon,Dragon,3,5,5,3,2,3,21,350
+Armor Dragon,Dragon,Durahan,3,5,4,3,2,4,21,410
+Gariel,Dragon,Gali,3,4,5,3,2,3,21,350
+Stone Dragon,Dragon,Golem,3,5,4,2,2,4,20,390
+Tecno Dragon,Dragon,Henger,3,5,4,3,3,3,21,370
+Death Dragon,Dragon,Joker,3,4,5,4,2,3,21,350
+Oscerot,Dragon,Kato,3,3,5,3,3,3,20,430
+Gidras,Dragon,Metalner,3,4,3,4,2,4,19,390
+Ragnaroks,Dragon,Monol,3,4,4,3,2,4,19,350
+Tiamat,Dragon,Pixie,2,4,5,3,3,2,19,370
+Hound Dragon,Dragon,Tiger,3,4,5,4,3,2,21,380
+Moo,Dragon,??? (Moo),4,4,1,2,2,4,17,370
+Ducken,Ducken,Ducken,3,3,3,4,5,1,19,400
+Blocken,Ducken,Golem,3,4,3,3,3,3,19,420
+Ticken,Ducken,Suezo,3,3,4,4,4,1,19,420
+Watermelony,Ducken,??? (Watermelony),3,3,3,4,5,1,19,420
+Lorica,Durahan,Arrow Head,3,4,3,3,1,5,19,500
+Hercules,Durahan,Beaclon,3,4,2,3,1,5,18,460
+Vesuvius,Durahan,Dragon,3,4,4,3,1,4,19,440
+Durahan,Durahan,Durahan,3,4,3,3,1,5,19,500
+Kelmadics,Durahan,Golem,3,4,3,2,1,5,18,480
+Genocider,Durahan,Joker,3,4,4,4,1,4,20,440
+Metal Glory,Durahan,Metalner,3,3,2,4,1,5,18,480
+Wood Knight,Durahan,Mock,2,3,4,3,1,4,17,520
+Garuda,Durahan,Phoenix,3,3,4,3,2,4,19,480
+Lesziena,Durahan,Pixie,2,3,4,3,2,3,17,460
+Hound Knight,Durahan,Tiger,3,3,3,4,2,3,18,460
+Kokushi Muso,Durahan,??? (Kokushi Muso),3,3,2,4,1,5,18,500
+Ruby Knight,Durahan,??? (Ruby Knight),3,4,4,3,1,4,19,460
+Shogun,Durahan,??? (Shogun),3,3,4,3,1,4,18,540
+Gaboo,Gaboo,Gaboo,5,4,1,1,4,1,16,450
+Jelly Gaboo,Gaboo,Jell,4,3,2,2,3,2,16,450
+Dokoo,Gaboo,Joker,4,4,3,3,3,1,18,410
+Frozen Gaboo,Gaboo,Tiger,4,3,2,3,4,1,17,430
+Gali,Gali,Gali,2,3,5,3,2,3,18,350
+Stone Mask,Gali,Golem,2,4,4,2,2,4,18,390
+Furred Mask,Gali,Hare,2,4,3,3,3,2,17,370
+Aqua Mask,Gali,Jell,2,3,5,3,2,3,18,390
+Galirous,Gali,Monol,2,3,4,3,2,4,18,350
+Purple Mask,Gali,Naga,2,3,3,3,2,3,16,350
+Pink Mask,Gali,Pixie,2,3,5,3,3,2,18,370
+Colorful,Gali,Plant,3,2,4,3,2,2,16,430
+Suezo Mask,Gali,Suezo,2,3,5,3,2,3,18,390
+Fanged Mask,Gali,Tiger,2,3,5,4,3,2,19,370
+Brown Mask,Gali,Worm,3,3,4,3,2,3,18,370
+Scaled Mask,Gali,Zuum,2,3,4,3,2,3,17,390
+Ghost,Ghost,Ghost,1,1,4,4,4,1,15,400
+Chef,Ghost,??? (Chef),1,1,4,4,4,1,15,420
+Dagon,Golem,Arrow Head,3,4,3,2,1,5,18,470
+Dao,Golem,Bajarl,3,5,3,2,2,4,19,450
+Sleepyhead,Golem,Baku,4,5,2,1,1,4,17,470
+Strong Horn,Golem,Beaclon,3,5,2,1,1,5,17,430
+Tyrant,Golem,Dragon,3,5,4,2,1,4,19,410
+Battle Rocks,Golem,Durahan,3,5,3,2,1,5,19,470
+Amenhotep,Golem,Gali,3,4,4,2,1,4,18,410
+Golem,Golem,Golem,3,5,3,1,1,5,18,450
+Moaigon,Golem,Hare,3,5,2,2,3,3,18,430
+Gobi,Golem,Henger,3,5,3,2,2,4,19,430
+Poseidon,Golem,Jell,3,4,3,2,1,5,18,450
+Angolmor,Golem,Joker,3,4,4,3,1,4,19,410
+Astro,Golem,Metalner,3,4,2,3,1,5,18,450
+Wood Golem,Golem,Mock,2,4,4,1,1,4,16,490
+Black Golem,Golem,Monol,3,4,3,1,1,5,17,410
+Marble Guy,Golem,Naga,3,5,2,2,1,4,17,410
+Pink Golem,Golem,Pixie,2,4,4,2,2,3,17,430
+Ecologuardia,Golem,Plant,4,3,3,2,1,3,16,490
+Titan,Golem,Suezo,3,4,4,2,1,4,18,450
+Big Blue,Golem,Tiger,3,4,3,3,2,3,18,430
+Magna,Golem,Worm,4,4,3,2,1,4,18,430
+Mariomax,Golem,Wracky,2,3,3,1,2,3,14,510
+Pressure,Golem,Zilla,3,5,3,1,1,4,17,450
+Scaled Golem,Golem,Zuum,3,4,3,2,2,4,18,450
+Prince Hare,Hare,Gali,3,4,3,3,4,2,19,380
+Rocky Fur,Hare,Golem,3,5,2,2,3,3,18,420
+Hare,Hare,Hare,3,5,1,3,5,1,18,400
+Jelly Hare,Hare,Jell,3,4,2,3,4,2,18,420
+Evil Hare,Hare,Monol,3,4,2,3,3,3,18,380
+Purple Hare,Hare,Naga,3,5,1,3,4,2,18,380
+Fairy Hare,Hare,Pixie,2,4,3,3,5,1,17,400
+Leaf Hare,Hare,Plant,4,3,2,3,4,1,17,460
+Four Eyed,Hare,Suezo,3,4,3,3,4,1,18,420
+Blue Hare,Hare,Tiger,3,4,2,4,5,1,19,400
+Wild Hare,Hare,Worm,4,4,2,3,3,1,17,400
+Scaled Hare,Hare,Zuum,3,4,1,3,4,2,17,420
+KungFu Hare,Hare,??? (KungFu Hare),3,5,1,3,5,1,18,420
+Garlant,Henger,Dragon,2,4,4,4,3,2,19,380
+Gaia,Henger,Golem,2,4,3,3,3,3,18,420
+Henger,Henger,Henger,2,4,3,4,4,2,19,400
+End Bringer,Henger,Joker,2,4,4,4,3,2,19,380
+Heuy,Henger,Metalner,2,3,2,4,3,3,17,420
+Automaton,Henger,Mock,2,3,4,3,3,2,17,460
+Black Henger,Henger,Monol,2,4,3,3,3,3,18,380
+Omega,Henger,Zuum,2,4,3,4,4,2,19,420
+Skeleton,Henger,??? (Skeleton),4,4,4,4,3,2,19,400
+Emerald Eye,Hopper,Bajarl,2,3,3,5,3,1,17,420
+Draco Hopper,Hopper,Dragon,2,4,4,4,3,2,19,380
+Hopper,Hopper,Hopper,2,3,3,5,3,1,17,400
+Snow Hopper,Hopper,Jill,2,3,3,4,3,2,17,420
+Sneak Hopper,Hopper,Joker,2,3,4,5,3,1,18,380
+Mustachios,Hopper,Kato,2,2,4,4,4,1,17,460
+Springer,Hopper,Metalner,2,3,2,5,2,3,17,420
+Pink Hopper,Hopper,Mocchi,2,3,3,5,3,2,18,420
+Woody Hopper,Hopper,Mock,2,3,4,4,3,1,17,460
+Fairy Hopper,Hopper,Pixie,2,3,4,5,3,1,18,400
+Rear Eyed,Hopper,Suezo,2,3,4,5,3,1,18,420
+Skipper,Hopper,Tiger,2,3,3,5,3,1,17,400
+Noble Jell,Jell,Gali,3,2,4,4,2,4,19,410
+Wall Mimic,Jell,Golem,3,3,4,3,2,4,19,450
+Muddy Jell,Jell,Hare,3,3,3,4,3,3,19,430
+Jell,Jell,Jell,3,2,4,4,2,4,19,450
+Clay,Jell,Monol,3,2,4,3,2,4,18,410
+Purple Jell,Jell,Naga,3,3,3,4,2,4,19,410
+Pink Jam,Jell,Pixie,2,2,4,4,3,3,18,430
+Chloro Jell,Jell,Plant,4,2,4,4,2,3,18,490
+Eye Jell,Jell,Suezo,3,2,4,4,2,3,18,450
+Icy Jell,Jell,Tiger,3,2,4,4,3,3,19,430
+Worm Jell,Jell,Worm,4,2,4,4,2,3,18,430
+Scaled Jell,Jell,Zuum,3,2,3,4,2,4,18,450
+Wondar,Jill,Hare,3,4,3,2,3,2,17,430
+Jill,Jill,Jill,3,4,4,2,2,3,18,450
+Skull Capped,Jill,Joker,3,4,4,3,2,3,19,410
+Bengal,Jill,Kato,3,3,4,2,3,3,18,490
+Pong Pong,Jill,Pixie,2,3,4,3,3,2,17,430
+Zorjil,Jill,Suezo,3,4,4,3,2,3,19,450
+Pierry,Jill,Tiger,3,3,4,3,3,2,18,430
+Odium,Joker,Bajarl,3,3,4,5,2,2,19,390
+Flare Death,Joker,Dragon,3,4,5,4,2,2,20,350
+Tombstone,Joker,Golem,3,4,4,3,2,3,19,390
+Joker,Joker,Joker,3,3,5,5,2,2,20,350
+Hell Heart,Joker,Pixie,2,3,5,5,3,2,20,370
+Blue Terror,Joker,Tiger,3,3,5,5,3,2,21,370
+Bloodshed,Joker,??? (Bloodshed),3,3,4,5,2,2,19,410
+Draco Kato,Kato,Dragon,2,3,5,3,4,2,19,470
+Gordish,Kato,Gali,2,2,5,3,4,2,18,470
+Tainted Cat,Kato,Joker,2,2,5,4,4,2,19,470
+Kato,Kato,Kato,2,1,5,3,5,2,18,550
+Pink Kato,Kato,Mocchi,2,2,4,3,5,3,20,510
+Citronie,Kato,Suezo,2,2,5,3,4,2,18,510
+Blue Kato,Kato,Tiger,2,1,5,4,5,2,19,490
+Metalner,Metalner,Metalner,3,2,1,5,1,5,17,450
+Love Seeker,Metalner,Pixie,2,2,3,5,2,3,17,430
+Metazorl,Metalner,Suezo,3,2,3,5,1,4,18,450
+Chinois,Metalner,??? (Chinois),2,2,3,5,2,3,17,450
+Eared Mew,Mew,Hare,4,3,2,4,4,2,19,460
+Aqua Mew,Mew,Jell,3,2,3,4,3,3,18,480
+Mew,Mew,Mew,4,2,2,4,4,2,18,500
+Mum Mew,Mew,Pixie,3,2,3,4,4,2,18,460
+Bowwow,Mew,Tiger,3,2,3,4,4,2,18,460
+Draco Mocchi,Mocchi,Dragon,3,4,4,4,3,4,22,410
+KnightMocchi,Mocchi,Durahan,3,3,3,4,3,4,20,470
+Gelatine,Mocchi,Jell,3,3,3,4,3,4,20,450
+Hell Pierrot,Mocchi,Joker,3,3,4,4,3,3,20,410
+Nyankoro,Mocchi,Kato,3,2,4,4,4,3,20,490
+Mocchi,Mocchi,Mocchi,3,3,3,4,4,4,21,450
+Manna,Mocchi,Pixie,2,3,4,3,4,3,19,430
+Fake Penguin,Mocchi,Tiger,3,3,3,4,4,3,20,430
+Ebony,Mock,Joker,2,2,5,3,2,2,16,470
+Mock,Mock,Mock,1,2,5,2,2,2,14,550
+White Birch,Mock,??? (White Birch),1,2,5,2,2,2,14,570
+Ivory Wall,Monol,Gali,2,3,4,2,1,4,16,350
+Obelisk,Monol,Golem,2,4,3,2,1,5,17,390
+Furred Wall,Monol,Hare,2,4,2,2,3,3,16,370
+Ice Candy,Monol,Jell,2,3,3,3,1,5,17,390
+Monol,Monol,Monol,2,3,3,2,1,5,16,350
+Asphaltum,Monol,Naga,2,3,2,3,1,4,15,350
+New Leaf,Monol,Plant,3,2,3,3,1,3,15,430
+Romper Wall,Monol,Pixie,2,3,4,3,2,3,17,370
+Sandy,Monol,Suezo,2,3,4,3,1,4,17,390
+Blue Sponge,Monol,Tiger,2,3,3,3,2,3,16,370
+Soboros,Monol,Worm,3,3,3,2,1,4,16,370
+Jura Wall,Monol,Zuum,2,3,3,3,2,4,17,390
+Galaxy,Monol,??? (Galaxy),2,3,4,3,1,4,17,410
+Bazula,Naga,Gali,3,4,3,4,2,3,19,350
+Trident,Naga,Golem,3,4,2,3,2,4,18,390
+Edgehog,Naga,Hare,3,4,1,4,3,2,17,370
+Aqua Cutter,Naga,Jell,3,3,2,4,2,3,17,390
+Crimson Eyed,Naga,Monol,3,4,2,3,2,4,18,350
+Naga,Naga,Naga,3,4,1,4,2,3,17,350
+Ripper,Naga,Pixie,2,3,3,4,3,2,17,370
+Jungler,Naga,Plant,4,3,2,4,2,2,17,430
+Cyclops,Naga,Suezo,3,4,3,4,2,3,19,390
+Striker,Naga,Tiger,3,3,2,4,3,2,17,370
+Earth Keeper,Naga,Worm,4,3,2,4,2,3,18,370
+Stinger,Naga,Zuum,3,4,1,4,2,3,17,390
+Alabia Niton,Niton,Bajarl,3,3,2,3,2,4,17,450
+Knight Niton,Niton,Durahan,3,3,2,2,2,5,17,470
+Ammon,Niton,Golem,3,3,2,2,2,5,17,450
+Clear Shell,Niton,Jell,3,2,3,3,2,5,18,450
+Stripe Shell,Niton,Kato,3,2,3,2,3,4,17,490
+Metal Shell,Niton,Metalner,3,2,2,3,2,5,17,450
+Baum Kuchen,Niton,Mock,2,2,3,2,2,4,15,490
+Niton,Niton,Niton,3,2,2,2,2,5,16,450
+Phoenix,Phoenix,Phoenix,3,1,5,3,3,3,18,450
+Cinder Bird,Phoenix,??? (Cinder Bird),3,1,5,3,3,3,18,470
+Jinnee,Pixie,Bajarl,2,2,4,4,4,1,17,420
+Unico,Pixie,Centaur,2,2,5,4,3,1,17,400
+Daina,Pixie,Dragon,2,3,5,4,3,2,19,380
+Janne,Pixie,Durahan,2,3,4,4,3,3,19,440
+Angel,Pixie,Gali,1,2,5,4,3,2,18,380
+Granity,Pixie,Golem,2,3,4,3,3,3,16,420
+Lepus,Pixie,Hare,2,3,3,4,4,1,17,400
+Nagisa,Pixie,Jell,2,2,5,4,3,2,18,420
+Snowy,Pixie,Jill,2,3,5,3,3,2,18,420
+Lilim,Pixie,Joker,2,2,5,4,3,1,16,380
+Kitten,Pixie,Kato,1,2,5,4,4,1,17,460
+Futurity,Pixie,Metalner,2,2,3,4,3,3,17,420
+Dryad,Pixie,Mock,1,2,5,3,3,1,15,460
+Silhouette,Pixie,Monol,1,2,4,3,3,3,16,380
+Allure,Pixie,Naga,2,3,3,4,3,2,17,380
+Pixie,Pixie,Pixie,1,2,5,4,4,1,17,400
+Serenity,Pixie,Plant,3,2,4,4,3,1,17,460
+Vanity,Pixie,Suezo,1,2,5,4,3,1,16,420
+Mint,Pixie,Tiger,1,2,5,4,4,1,17,400
+Night Flyer,Pixie,Worm,3,2,4,4,3,1,17,400
+Jilt,Pixie,Wracky,2,2,5,3,4,1,17,480
+Dixie,Pixie,Zuum,2,2,4,4,4,2,18,420
+Kasumi,Pixie,??? (Kasumi),2,3,4,4,3,3,19,480
+Mia,Pixie,??? (Mia),2,3,5,4,4,1,19,420
+Poison,Pixie,??? (Poison),2,2,5,4,3,1,16,400
+Gold Plant,Plant,Gali,4,2,4,3,2,2,17,470
+Rock Plant,Plant,Golem,4,3,3,2,2,3,17,510
+Hare Plant,Plant,Hare,4,3,2,3,3,1,16,490
+Mirage Plant,Plant,Jell,4,2,3,3,2,2,16,510
+Black Plant,Plant,Monol,4,2,3,3,2,3,17,470
+Weeds,Plant,Naga,4,2,2,3,2,1,14,470
+Queen Plant,Plant,Pixie,3,1,4,3,3,1,15,490
+Plant,Plant,Plant,5,1,3,3,2,1,15,550
+Usaba,Plant,Suezo,4,2,4,3,2,1,16,510
+Blue Plant,Plant,Tiger,4,1,3,4,3,1,16,490
+Fly Plant,Plant,Worm,5,2,3,3,2,1,16,490
+Scaled Plant,Plant,Zuum,4,2,3,3,2,2,16,510
+Reggae Plant,Plant,??? (Reggae Plant),3,1,4,3,3,1,15,510
+Orion,Suezo,Gali,2,3,5,4,2,2,18,410
+Rocky Suezo,Suezo,Golem,2,4,4,3,2,3,18,450
+Furred Suezo,Suezo,Hare,2,4,3,4,3,2,18,430
+Clear Suezo,Suezo,Jell,2,3,5,4,2,3,19,450
+Red Eye,Suezo,Monol,2,3,4,3,2,3,17,410
+Purple Suezo,Suezo,Naga,2,3,3,4,2,2,16,410
+Pink Eye,Suezo,Pixie,2,2,5,4,3,2,19,430
+Green Suezo,Suezo,Plant,3,2,4,3,2,2,16,490
+Suezo,Suezo,Suezo,2,3,5,4,2,2,18,450
+Horn,Suezo,Tiger,2,3,5,4,3,2,19,430
+Fly Eye,Suezo,Worm,3,3,4,4,2,2,18,430
+Melon Suezo,Suezo,Zuum,2,3,4,4,2,2,17,450
+Birdie,Suezo,??? (Birdie),2,3,5,4,2,2,18,480
+Bronze Suezo,Suezo,??? (Bronze Suezo),2,3,3,4,2,2,16,430
+Gold Suezo,Suezo,??? (Gold Suezo),2,3,5,4,2,2,18,450
+Silver Suezo,Suezo,??? (Silver Suezo),2,3,4,3,2,3,17,430
+Sueki Suezo,Suezo,??? (Sueki Suezo),1,1,1,1,1,1,6,1
+Balon,Tiger,Gali,2,2,4,4,3,2,18,380
+Rock Hound,Tiger,Golem,2,3,4,3,3,3,18,420
+Hare Hound,Tiger,Hare,2,3,3,4,4,1,17,400
+Jelly Hound,Tiger,Jell,2,2,4,5,3,2,18,420
+Terror Dog,Tiger,Monol,2,2,4,4,3,3,18,380
+Cabalos,Tiger,Naga,2,3,3,5,3,2,18,380
+Daton,Tiger,Pixie,2,2,4,5,4,1,18,400
+Tropical Dog,Tiger,Plant,3,2,4,4,3,1,17,460
+Mono Eyed,Tiger,Suezo,2,2,4,5,3,1,17,420
+Tiger,Tiger,Tiger,2,2,4,5,4,1,18,400
+Jagd Hound,Tiger,Worm,3,2,4,4,3,1,17,400
+Datonare,Tiger,Zuum,2,2,3,5,4,2,18,420
+Siren,Undine,Joker,3,2,4,5,3,1,18,380
+Undine,Undine,Undine,3,1,4,5,4,1,18,400
+Mermaid,Undine,??? (Mermaid),3,1,4,5,4,2,19,420
+Mask Worm,Worm,Gali,4,3,4,3,1,2,17,380
+Rock Worm,Worm,Golem,4,4,3,2,1,3,17,430
+Corone,Worm,Hare,4,4,2,3,3,2,18,400
+Jelly Worm,Worm,Jell,4,3,3,3,1,3,17,420
+Black Worm,Worm,Monol,4,3,3,3,1,3,17,380
+Purple Worm,Worm,Naga,4,3,2,3,1,2,15,380
+Red Worm,Worm,Pixie,3,3,4,3,2,2,18,400
+Flower Worm,Worm,Plant,5,2,3,3,1,2,16,460
+Eye Worm,Worm,Suezo,4,3,4,3,1,2,17,420
+Drill Tusk,Worm,Tiger,4,3,3,4,2,2,18,400
+Worm,Worm,Worm,5,3,3,3,1,2,17,400
+Scaled Worm,Worm,Zuum,4,3,3,3,2,2,17,430
+Express Worm,Worm,??? (Express Worm),5,2,3,3,1,2,16,480
+Bakky,Wracky,Bajarl,3,2,3,2,4,1,15,540
+Draco Doll,Wracky,Dragon,3,3,4,2,3,2,16,500
+Petit Knight,Wracky,Durahan,3,2,4,2,3,3,17,560
+Pebbly,Wracky,Golem,3,3,4,1,3,3,17,540
+Henger Doll,Wracky,Henger,3,2,4,2,4,1,16,520
+Tricker,Wracky,Joker,3,2,4,3,3,1,16,500
+Metal Glay,Wracky,Metalner,3,1,3,3,3,3,16,540
+Mocky,Wracky,Mock,2,1,4,1,3,1,12,580
+Baby Doll,Wracky,Pixie,2,1,4,2,4,1,14,520
+Wracky,Wracky,Wracky,3,1,4,1,4,1,14,600
+Satan Clause,Wracky,??? (Satan Clause),3,3,4,1,3,3,17,560
+Gigalon,Zilla,Jell,3,4,3,2,3,3,18,450
+Pink Zilla,Zilla,Pixie,3,4,3,2,3,2,17,430
+Gooji,Zilla,Tiger,3,4,3,3,3,2,18,430
+Zilla,Zilla,Zilla,4,5,2,1,2,3,17,450
+Crab Saurian,Zuum,Arrow Head,3,3,2,4,3,4,19,470
+Sand Saurian,Zuum,Bajarl,3,3,2,4,3,3,18,450
+Hachiro,Zuum,Baku,4,3,2,3,2,3,17,470
+Salamander,Zuum,Dragon,3,4,3,4,3,3,20,410
+NobleSaurian,Zuum,Gali,3,3,3,4,3,3,19,410
+Rock Saurian,Zuum,Golem,3,4,2,3,2,4,18,450
+Spot Saurian,Zuum,Hare,3,4,2,4,4,2,19,430
+JellySaurian,Zuum,Jell,3,3,3,4,3,3,19,450
+Basilisk,Zuum,Joker,3,3,3,4,3,3,19,410
+Tasman,Zuum,Kato,3,2,3,4,4,2,18,490
+Wood Saurian,Zuum,Mock,2,3,3,3,3,3,17,490
+BlackSaurian,Zuum,Monol,3,3,2,3,2,4,17,410
+Naga Saurian,Zuum,Naga,3,3,2,4,3,3,18,410
+AlohaSaurian,Zuum,Plant,4,2,3,3,3,2,17,490
+FairySaurian,Zuum,Pixie,2,3,3,4,3,2,17,430
+Mustardy,Zuum,Suezo,3,3,3,4,3,3,19,450
+HoundSaurian,Zuum,Tiger,3,3,3,4,3,2,18,430
+ShellSaurian,Zuum,Worm,4,3,2,3,2,3,17,430
+Zuum,Zuum,Zuum,3,3,2,4,3,3,18,450
+Zebrasaurian,Zuum,??? (Zebrasaurian),2,3,3,4,3,2,17,450
