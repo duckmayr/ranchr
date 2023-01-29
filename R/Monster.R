@@ -39,12 +39,12 @@ Monster = function(name = "", monster = "", main = "", sub = "", stats = NULL) {
             stop("ranchr does not have data on ", monster)
         }
     } else {
-        condition1 = any(ranchr::monsterlist$main == main)
-        condition2 = any(ranchr::monsterlist$sub == sub)
-        if ( !(condition1 & condition2) ) {
+        main_match = ranchr::monsterlist$main == main
+        sub_match  = ranchr::monsterlist$sub == sub
+        if ( !any(main_match & sub_match) ) {
             stop("ranchr does not have data on a ", main, "/", sub)
         }
-        monster = ranchr::monsterlist$monster[which(condition1 & condition2)]
+        monster = ranchr::monsterlist$monster[which(main_match & sub_match)]
     }
     template = ranchr::monsters[[monster]]
     if ( main == "" ) {
