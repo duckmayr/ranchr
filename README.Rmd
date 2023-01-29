@@ -29,6 +29,46 @@ You can install the development version of `ranchr` like so:
 devtools::install_github("duckmayr/ranchr")
 ```
 
+## Example
+
+Suppose you had a Mono Eyed (Tiger/Suezo) and Mustardy (Zuum/Suezo) and wanted to know what their combination prospects were.
+First you'd create `Monster` class objects representing these parent monsters (their current stats are given in the `stats` argument):
+
+```{r define-parents}
+library(ranchr)
+Parent1 = Monster(
+    name  = "Collie",
+    main  = "Tiger",
+    sub   = "Suezo",
+    stats = c(150, 111, 612, 680, 504, 95)
+)
+
+Parent2 = Monster(
+    name  = "Marigold",
+    main  = "Zuum",
+    sub   = "Suezo",
+    stats = c(286, 220, 461, 505, 400, 181)
+)
+```
+
+To get a great monster combination, you need the two parents' *adjusted* stats to match with each other, as well as matching with the child monster type's *baseline* stats.
+You know how when you're training a monster, some stats go up faster than others?
+Well the same monster attributes that cause these differences in stat gains also lead to a behind-the-scenes "adjustment" in how the stat levels are treated during combination.
+"Baseline" stats just refers to the average starting out attributes for a monster type straight from a disc.
+If you examine a `Monster` object, it will give you all this information:
+
+```{r examine-parent}
+Parent1
+```
+
+To test out and see how to `Monster`s would combine, you simply add them together!
+
+```{r combination}
+Parent1 + Parent2
+```
+
+You can see that this should be a great combination, particularly if you can get another Mono Eyed (Tiger/Suezo) out of it, since both parents and the child monster would have their stats ordered: Skill, Intelligence, Speed, Life, Power, Defense (abbreviated Sk, I, Sp, L, P, D respectively in the output above).
+
 ## Special Thanks
 
 Special thanks to Kurasu Soratobu, whose "Monster Rancher: Combining FAQ" provided the necessary data and information to make this package possible; I appreciate his willingness to let me publish his data.
@@ -38,4 +78,4 @@ Please see the file `inst/COPYRIGHTS` for relevant copyright information.
 
 The data for Kurasu's guide were compiled several years ago for the PlayStation version of Monster Rancher 2.
 It's *possible* that some things have changed when they ported the game to iOS, Nintendo Switch, and PC.
-If you notice anything that seems off, just [open and issue](https://github.com/duckmayr/ranchr/issues) and let me know.
+If you notice anything that seems off, just [open an issue](https://github.com/duckmayr/ranchr/issues) and let me know.
