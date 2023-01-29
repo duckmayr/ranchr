@@ -35,3 +35,103 @@ print.Monster = function(x, ...) {
     cat(center_text(order_, w), "\n\n", sep = "")
     invisible(x)
 }
+
+#' @export
+print.MonsterCombination = function(x, ...) {
+    w = getOption("width")
+    header = paste(x$parent_stat_orders$Monster, collapse = " with ")
+    header = paste0("    Combining ", header)
+    cat("\n", header, "\n\n", sep = "")
+    abbreviations = c(
+        life = "L", power = "P", intelligence = "I",
+        skill = "Sk", speed = "Sp", defense = "D"
+    )
+    hdr2 = paste(
+        x$parent_stat_orders$Main,
+        x$parent_stat_orders$Sub,
+        sep = " / "
+    )
+    col_lengths = nchar(hdr2)
+    hdr1 = sapply(1:2, function(i) {
+        center_text(x$parent_stat_orders$Monster[i], col_lengths[i])
+    })
+    hdr1 = paste(hdr1, collapse = "    ")
+    hdr2 = paste(hdr2, collapse = "    ")
+    cat(center_text("Parents' Adjusted & Ordered Stats", w), "\n", sep = "")
+    cat(center_text(hdr1, w), "\n", sep = "")
+    cat(center_text(hdr2, w), "\n", sep = "")
+    cat(center_text(strrep("-", nchar(hdr1) + 2), w), "\n", sep = "")
+    col1 = center_text(sprintf(
+        "%-3s %3d",
+        paste0(abbreviations[names(x$parent1_stats)], ":"),
+        x$parent1_stats
+    ), col_lengths[1])
+    col2 = center_text(sprintf(
+        "%-3s %3d",
+        paste0(abbreviations[names(x$parent2_stats)], ":"),
+        x$parent2_stats
+    ), col_lengths[2])
+    table_body = paste(col1, col2, sep = "    ")
+    cat(center_text(table_body, w), sep = "\n")
+    cat("\n")
+    sayings = c(
+        "This one's all up to you",
+        "The prospect is unsure",
+        "This combination doesn't look so good, I can't recommend it",
+        "The prospect is fine... It will probably work out",
+        "The prospect of this combination is good. You can look forward to it",
+        NA,
+        paste(
+            "The prospect of this combination is great.",
+            "It can't go wrong unless something weird happens"
+        )
+    )
+    matches = sum(names(x$parent1_stats) == names(x$parent2_stats))
+    explainer = paste0("(That means there are ", matches, " matching stats)")
+    if ( x$parent_stat_orders$Monster[1] == x$parent_stat_orders$Monster[2] ) {
+        matches = 0
+        explainer = "(That's because the parents are the same exact breed)"
+    }
+    saying = strwrap(sayings[matches + 1], w - 16)
+    saying = paste(saying, collapse = paste0("\n", strrep(" ", 16)))
+    cat("    Dadge says: ", saying, "\n\n", sep = "")
+    explainer = strwrap(explainer, w - 4)
+    explainer = paste(explainer, collapse = paste0("\n", strrep(" ", 4)))
+    cat("    ", explainer, "\n\n", sep = "")
+    stat_width = 13 + 3 + 7
+    remaining_width = w - stat_width - 2
+    dat = x$baby_stat_orders
+    dat = dat[order(dat$Matches, decreasing = TRUE), ]
+    header = colnames(dat)
+    breed_col_widths = apply(dat[ , 1:3], 2, function(x) max(nchar(x)))
+    if ( sum(breed_col_widths) > remaining_width ) {
+        excess = sum(breed_col_widths) - remaining_width
+        to_trim = ceiling(excess / 2)
+        breed_col_widths[2:3] = breed_col_widths[2:3] - to_trim
+        abb = function(x, ...) abbreviate(names.arg = x, ..., dot = TRUE)
+        header[2] = abb(header[2], minlength = breed_col_widths[2])
+        header[3] = abb(header[3], minlength = breed_col_widths[3])
+        dat$Main  = abb(dat$Main,  minlength = breed_col_widths[2])
+        dat$Sub   = abb(dat$Sub,   minlength = breed_col_widths[3])
+    }
+    total_table_width = sum(breed_col_widths) + 9 + stat_width
+    widths = c(breed_col_widths, 13, 7)
+    header = sapply(1:5, function(i) center_text(header[i], widths[i]))
+    header = paste(header, collapse = "   ")
+    table_body = apply(dat, 1, function(r) {
+        paste(
+            paste0(r[1], strrep(" ", max(0, widths[1] - nchar(r[1])))),
+            paste0(r[2], strrep(" ", max(0, widths[2] - nchar(r[2])))),
+            paste0(r[3], strrep(" ", max(0, widths[3] - nchar(r[3])))),
+            r[4],
+            center_text(r[5], 7),
+            sep = "   "
+        )
+    })
+    centered_title = center_text("Possible Outcomes", total_table_width)
+    cat(center_text(centered_title, w), "\n", sep = "")
+    cat(center_text(header, w), "\n", sep = "")
+    cat(center_text(strrep("-", nchar(header) + 2), w), "\n", sep = "")
+    cat(center_text(table_body, w), sep = "\n")
+    cat("\n")
+}
