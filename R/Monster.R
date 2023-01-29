@@ -81,6 +81,8 @@ Monster = function(name = "", monster = "", main = "", sub = "", stats = NULL) {
     }
     ## Set the name and stats and return
     template$name = name
-    template$stats = stats
+    if ( !is.null(stats) ) {
+        template$stats = stats
+    }
     return(template)
 }
