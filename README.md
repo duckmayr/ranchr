@@ -61,14 +61,14 @@ Parent1
 #>                                    Mono Eyed                                    
 #>                                 (Tiger / Suezo)                                 
 #> 
-#>                       Stat     | Current | Adjusted | Baseline                  
-#>                   -------------+---------+----------+---------                  
-#>                   Life         |     150 |       75 |       90                  
-#>                   Power        |     111 |       56 |       80                  
-#>                   Intelligence |     612 |      918 |      130                  
-#>                   Skill        |     680 |      999 |      170                  
-#>                   Speed        |     504 |      504 |      100                  
-#>                   Defense      |      95 |        0 |       60                  
+#>                Stat       Current      Gain      Adjusted   Baseline            
+#>            ---------------------------------------------------------            
+#>            Life               150   2 (x 0.50)         75         90            
+#>            Power              111   2 (x 0.50)         56         80            
+#>            Intelligence       612   4 (x 1.50)        918        130            
+#>            Skill              680   5 (x 2.00)        999        170            
+#>            Speed              504   3 (x 1.00)        504        100            
+#>            Defense             95   1 (x 0.00)          0         60            
 #> 
 #>                 Stat order:                                                     
 #>                 Skill, Intelligence, Speed, Life, Power, Defense

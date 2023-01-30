@@ -10,10 +10,13 @@ center_text = function(x, width) {
 print.Monster = function(x, ...) {
     w = getOption("width")
     breed  = paste0("(", x$main, " / ", x$sub, ")")
-    header = "    Stat     | Current | Adjusted | Baseline"
-    hline  = "-------------+---------+----------+---------"
+    header = "    Stat       Current      Gain      Adjusted   Baseline"
+    hline  = "---------------------------------------------------------"
     fixed  = adjust_stats(x)
     order_ = paste(tools::toTitleCase(names(order_stats(x))), collapse = ", ")
+    gains  = x$statgains
+    gains  = sprintf("%d (x %0.2f)", gains, c(0, 0.5, 1, 1.5, 2)[gains])
+    gains  = stats::setNames(gains, names(x$stats))
     cat("\n")
     if ( x$name != "" ) {
         cat(center_text(x$name, w), "\n\n", sep = "")
@@ -24,9 +27,10 @@ print.Monster = function(x, ...) {
     cat(center_text(hline, w), "\n", sep = "")
     for ( stat in names(x$stats) ) {
         Stat = tools::toTitleCase(stat)
-        this_row = paste0(Stat, strrep(" ", 12 - nchar(stat)), " | ")
-        this_row = paste0(this_row, sprintf("%7d", x$stats[stat]), " | ")
-        this_row = paste0(this_row, sprintf("%8d", fixed[stat]), " | ")
+        this_row = paste0(Stat, strrep(" ", 12 - nchar(stat)), "   ")
+        this_row = paste0(this_row, sprintf("%7d", x$stats[stat]), "   ")
+        this_row = paste0(this_row, sprintf("%s", gains[stat]), "   ")
+        this_row = paste0(this_row, sprintf("%8d", fixed[stat]), "   ")
         this_row = paste0(this_row, sprintf("%8d", x$baselines[stat]))
         cat(center_text(this_row, w), "\n", sep = "")
     }
@@ -104,15 +108,15 @@ print.MonsterCombination = function(x, ...) {
     dat = dat[order(dat$Matches, decreasing = TRUE), ]
     header = colnames(dat)
     breed_col_widths = apply(dat[ , 1:3], 2, function(x) max(nchar(x)))
-    if ( sum(breed_col_widths) > remaining_width ) {
-        excess = sum(breed_col_widths) - remaining_width
+    if ( sum(breed_col_widths) + 9 > remaining_width ) {
+        excess = sum(breed_col_widths) + 9 - remaining_width
         to_trim = ceiling(excess / 2)
         breed_col_widths[2:3] = breed_col_widths[2:3] - to_trim
         abb = function(x, ...) abbreviate(names.arg = x, ..., dot = TRUE)
-        header[2] = abb(header[2], minlength = breed_col_widths[2])
-        header[3] = abb(header[3], minlength = breed_col_widths[3])
-        dat$Main  = abb(dat$Main,  minlength = breed_col_widths[2])
-        dat$Sub   = abb(dat$Sub,   minlength = breed_col_widths[3])
+        header[2] = abb(header[2], minlength = breed_col_widths[2]-1)
+        header[3] = abb(header[3], minlength = breed_col_widths[3]-1)
+        dat$Main  = abb(dat$Main,  minlength = breed_col_widths[2]-1)
+        dat$Sub   = abb(dat$Sub,   minlength = breed_col_widths[3]-1)
     }
     total_table_width = sum(breed_col_widths) + 9 + stat_width
     widths = c(breed_col_widths, 13, 7)
@@ -134,4 +138,52 @@ print.MonsterCombination = function(x, ...) {
     cat(center_text(strrep("-", nchar(header) + 2), w), "\n", sep = "")
     cat(center_text(table_body, w), sep = "\n")
     cat("\n")
+    invisible(x)
+}
+
+#' @export
+print.MonsterComboEngineering = function(x, ...) {
+    w = getOption("width")
+    h = paste(
+        "Combining", x$given_parent$monster,
+        "to get a", x$given_child$monster
+    )
+    cat("\n    ", h, "\n\n", sep = "")
+    stat_width = 13 + 3 + 7
+    remaining_width = w - stat_width - 2
+    dat = x$stat_orders
+    dat = dat[order(dat$Matches, decreasing = TRUE), ]
+    header = colnames(dat)
+    breed_col_widths = apply(dat[ , 1:3], 2, function(x) max(nchar(x)))
+    if ( sum(breed_col_widths) + 9 > remaining_width ) {
+        excess = sum(breed_col_widths) + 9 - remaining_width
+        to_trim = ceiling(excess / 2)
+        breed_col_widths[2:3] = breed_col_widths[2:3] - to_trim
+        abb = function(x, ...) abbreviate(names.arg = x, ..., dot = TRUE)
+        header[2] = abb(header[2], minlength = breed_col_widths[2]-1)
+        header[3] = abb(header[3], minlength = breed_col_widths[3]-1)
+        dat$Main  = abb(dat$Main,  minlength = breed_col_widths[2]-1)
+        dat$Sub   = abb(dat$Sub,   minlength = breed_col_widths[3]-1)
+    }
+    total_table_width = sum(breed_col_widths) + 9 + stat_width
+    widths = c(breed_col_widths, 13, 7)
+    header = sapply(1:5, function(i) center_text(header[i], widths[i]))
+    header = paste(header, collapse = "   ")
+    table_body = apply(dat, 1, function(r) {
+        paste(
+            paste0(r[1], strrep(" ", max(0, widths[1] - nchar(r[1])))),
+            paste0(r[2], strrep(" ", max(0, widths[2] - nchar(r[2])))),
+            paste0(r[3], strrep(" ", max(0, widths[3] - nchar(r[3])))),
+            r[4],
+            center_text(r[5], 7),
+            sep = "   "
+        )
+    })
+    centered_title = center_text("Possible Second Parents", total_table_width)
+    cat(center_text(centered_title, w), "\n", sep = "")
+    cat(center_text(header, w), "\n", sep = "")
+    cat(center_text(strrep("-", nchar(header) + 2), w), "\n", sep = "")
+    cat(center_text(table_body, w), sep = "\n")
+    cat("\n")
+    invisible(x)
 }

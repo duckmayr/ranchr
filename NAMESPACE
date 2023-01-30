@@ -3,4 +3,6 @@
 S3method("+",Monster)
 S3method(print,Monster)
 S3method(print,MonsterCombination)
+S3method(print,MonsterComboEngineering)
 export(Monster)
+export(engineer)
