@@ -70,6 +70,7 @@ Parent1
 #>            Speed              504   3 (x 1.00)        504        100            
 #>            Defense             95   1 (x 0.00)          0         60            
 #> 
+#> 
 #>                 Stat order:                                                     
 #>                 Skill, Intelligence, Speed, Life, Power, Defense
 ```
@@ -100,7 +101,7 @@ Parent1 + Parent2
 #> 
 #>                                Possible Outcomes                                
 #>                Monster      Main     Sub     Stat Order     Matches             
-#>             --------------------------------------------------------            
+#>              ------------------------------------------------------             
 #>              Mono Eyed      Tiger   Suezo   Sk I Sp L P D      6                
 #>              Tiger          Tiger   Tiger   Sk Sp I P L D      2                
 #>              Datonare       Tiger   Zuum    Sk Sp I D P L      2                
