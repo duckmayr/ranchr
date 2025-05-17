@@ -83,6 +83,8 @@ print.MonsterCombination = function(x, ...) {
         sep = " / "
     )
     col_lengths = nchar(hdr2)
+    mon_lengths = nchar(x$parent_stat_orders$Monster)
+    col_lengths = pmax(col_lengths, mon_lengths)
     hdr1 = sapply(1:2, function(i) {
         center_text(x$parent_stat_orders$Monster[i], col_lengths[i])
     })
